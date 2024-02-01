@@ -50,7 +50,7 @@ REFINE_PROMPT_QUESTIONS = PromptTemplate(
 )
 
 # Initialize Streamlit app
-st.title('Question-Answer Pair Generator with Zephyr-7B')
+st.title('Question-Answer Pair Generator with Zephyr-7B model')
 st.markdown('<style>h1{color: orange; text-align: center;}</style>', unsafe_allow_html=True)
 
 # File upload widget
