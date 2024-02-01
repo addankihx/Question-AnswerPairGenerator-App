@@ -50,7 +50,7 @@ REFINE_PROMPT_QUESTIONS = PromptTemplate(
 )
 
 # Initialize Streamlit app
-st.title('Question-Answer Pair Generator with Zephyr-7B model')
+st.title('Question-Answer Pair Generator ')
 st.markdown('<style>h1{color: orange; text-align: center;}</style>', unsafe_allow_html=True)
 
 # File upload widget
@@ -72,7 +72,7 @@ if file_path:
     loader = PyPDFLoader(file_path)
     data = loader.load()
 
-    # Combine text from Document into one string for question generation
+    # Combine text from the Document into one string for question generation
     text_question_gen = ''
     for page in data:
         text_question_gen += page.page_content
